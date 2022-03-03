@@ -56,9 +56,14 @@ It is optional parameter to a regex that modifies its behavior of searching, the
 
 ### Bracket Expressions
 Bracket Expressions, these are special kind of character classes.
+/^#?([a-f0-9]{6}|[a-f0-9]{3})$/
+Matches any character in the square brackets.
 
 ### Greedy and Lazy Match
-We should understand how the search works very well if we plan to look for something more complex
+We should understand how the search works very well if we plan to look for something more complex.
+/^#?([a-f0-9]{6}|[a-f0-9]{3})$/
+Greedy matches an element as n number of times.
+And lazy matches an element as few times.
 
 ### Boundaries
 
@@ -67,8 +72,10 @@ We should understand how the search works very well if we plan to look for somet
 ### Look-ahead and Look-behind
 
 ## Author
-
+My Name is -->
 * [Vinay Vallabhaneni](https://github.com/vinssm)
+
+Here is my github repo: https://github.com/vinssm
 
 ## Resources:
 * [Google](https://www.google.com/)
