@@ -68,9 +68,9 @@ We should understand how the search works very well if we plan to look for somet
 
 ## Author
 
-Vinay Vallabhanei 
+* [Vinay Vallabhaneni](https://github.com/vinssm)
 
 ## Resources:
-Goole indexed websites.
+* [Google](https://www.google.com/)
 
 
