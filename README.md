@@ -43,6 +43,8 @@ Anchors have special meaning in regular expressions. They do not match any chara
 
 ### Quantifiers
 Quantifiers specify how many instances of a character, group, or character class must be present in the input for a match to be found.
+/\w*/.test('abc123') // true
+/\w*/.test('') // true. * = 0 to many
 
 ### OR Operator
 The pipe character | is the selection operator. It matches alternatives. Suppose a pattern should match the strings 1 and 2
