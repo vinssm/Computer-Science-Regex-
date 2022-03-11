@@ -48,13 +48,30 @@ Quantifiers specify how many instances of a character, group, or character class
 
 ### OR Operator
 The pipe character | is the selection operator. It matches alternatives. Suppose a pattern should match the strings 1 and 2
+OR operator will match the characters on the left or right of the operator. 
+Example: r|R will match either r or R from he string. 
+/\w*/.test('') // r|R it will search for r OR R. 
 
 ### Character Classes
 Character Class | Character Set, you can tell the regex engine to match only one out of several characters. Simply place the characters you want to match between square brackets []. 
+/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\D.]{2,6})$/
+\d searches for digits and \D searches for non-digits
+
 ### Flags
+These are used at the end of regex after closing \
 It is optional parameter to a regex that modifies its behavior of searching, there are 6 flags i g s m y u.
+Multiple flags can be set one after the other, remember no spaces, which are written in lowercase.
+
+i: Ignores casing and case sensitive
+g: for Global searches all occurences.
+s: Wild characters and maches new lines
+m: for multiline 
+y: Matches from last indexed property
+u: Unicode 
 
 ### Grouping and Capturing
+Pattern search can be enclosed in () and treat multiple character sets as one unit
+(/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\D.]{2,6})$/)
 
 ### Bracket Expressions
 Bracket Expressions, these are special kind of character classes.
@@ -68,16 +85,24 @@ Greedy matches an element as n number of times.
 And lazy matches an element as few times.
 
 ### Boundaries
+These are similar to anchor. 
+\b/^#?([a-f0-9]{6}|[a-f0-9]{3})$/ here \b is searching for whole word.
+
 
 ### Back-references
+These are filters which are used to match same text from previous match. We can use it for repeated search.
+/^#?([a-f0-9]{6}|[a-f0-9]{3})$/ --> does not include any Back-references
 
-### Look-ahead and Look-behind
+
 
 ## Author
-My Name is -->
+Vinay is studying Full-stack developer at UNCC Bootcamp 2021-2022. 
+Below is the Github repo and contact
 * [Vinay Vallabhaneni](https://github.com/vinssm)
 
 Here is my github repo: https://github.com/vinssm
+
+* [Email](vinssmedia@gmail.com)
 
 ## Resources:
 * [Google](https://www.google.com/)
